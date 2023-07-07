@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShellWithBackButton.Overview">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                Text="Details"
+                BackgroundColor="Red"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="/Details"
+                BackgroundColor="Red"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="//Details"
+                BackgroundColor="Green"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="///Details"
+                BackgroundColor="Green"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="Details/InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="/Details/InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="/InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="//Details/InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="//InnerPage1"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="///Details/InnerPage1"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="///InnerPage1"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="TestPageInsideVisualHierarchy"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="TestPageOutsideVisualHierarchy"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="/TestPageInsideVisualHierarchy"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="/TestPageOutsideVisualHierarchy"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="//TestPageInsideVisualHierarchy"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="//TestPageOutsideVisualHierarchy"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="///TestPageInsideVisualHierarchy"
+                    BackgroundColor="Green"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Text="///TestPageOutsideVisualHierarchy"
+                    BackgroundColor="Red"
+                    Clicked="OnButtonClicked"
+                    HorizontalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

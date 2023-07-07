@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellWithBackButton.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellWithBackButton"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Overview"
+        ContentTemplate="{DataTemplate local:Overview}"
+        Route="Overview" />
+
+    <TabBar Route="Details">
+
+        <Tab Title="Inner Page 1">
+            <ShellContent Title="Inner Page 1"
+                          Route="InnerPage1">
+                <ContentPage>
+                    <VerticalStackLayout>
+                        <Label 
+                            Text="Inner Page 1"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+        <Tab Title="Inner Page 2">
+            <ShellContent Title="Inner Page 2"
+                          Route="InnerPage2">
+                <ContentPage>
+                    <VerticalStackLayout>
+                        <Label 
+                            Text="Inner Page 2"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+
+    </TabBar>
+
+    <ShellContent
+        Title="Test Page"
+        ContentTemplate="{DataTemplate local:TestPage}"
+        Route="TestPageInsideVisualHierarchy" />
+
+</Shell>
